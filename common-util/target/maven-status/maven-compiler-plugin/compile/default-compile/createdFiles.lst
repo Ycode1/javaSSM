@@ -1,0 +1,9 @@
+com\guigu\service\BaseService.class
+com\guigu\result\ResultCodeEnum.class
+com\guigu\result\Result.class
+com\guigu\util\WebUtil.class
+com\guigu\util\CastUtil.class
+com\guigu\service\impl\BaseServiceImpl.class
+com\guigu\dao\BaseDao.class
+com\guigu\util\MD5.class
+com\guigu\controller\BaseController.class
