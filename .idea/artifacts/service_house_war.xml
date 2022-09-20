@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="service-house:war">
+    <output-path>$PROJECT_DIR$/service/service-house/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>service-house</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="service-house-1.0.war">
+      <element id="artifact" artifact-name="service-house:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,4 @@
+com\guigu\dao\DictDao.class
+com\guigu\service\impl\CommunityServiceImpl.class
+com\guigu\service\impl\DictServiceImpl.class
+com\guigu\dao\CommunityDao.class

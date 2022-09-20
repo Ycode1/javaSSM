@@ -1,2 +1,4 @@
+com\guigu\service\DictService.class
+com\guigu\service\CommunityService.class
 com\guigu\service\RoleService.class
 com\guigu\service\AdminService.class
