@@ -4,5 +4,6 @@ com\guigu\controller\CommunityController.class
 com\guigu\controller\HouseUserController.class
 com\guigu\controller\RoleController.class
 com\guigu\controller\HouseBrokerController.class
+com\guigu\controller\HouseImageController.class
 com\guigu\controller\IndexController.class
 com\guigu\controller\DictController.class

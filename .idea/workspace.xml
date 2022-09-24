@@ -2,92 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="417defd1-b2d5-441e-8ad7-23f5b18d4832" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/service-api/src/main/java/com/guigu/service/HouseBrokerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-api/src/main/java/com/guigu/service/HouseImageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-api/src/main/java/com/guigu/service/HouseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-api/src/main/java/com/guigu/service/HouseUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-house/src/main/java/com/guigu/dao/HouseBrokerDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-house/src/main/java/com/guigu/dao/HouseDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-house/src/main/java/com/guigu/dao/HouseImageDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-house/src/main/java/com/guigu/dao/HouseUserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-house/src/main/java/com/guigu/service/impl/HouseBrokerServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-house/src/main/java/com/guigu/service/impl/HouseImageServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-house/src/main/java/com/guigu/service/impl/HouseServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-house/src/main/java/com/guigu/service/impl/HouseUserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-house/src/main/resources/mapper/HouseBrokerDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-house/src/main/resources/mapper/HouseDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-house/src/main/resources/mapper/HouseImageDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-house/src/main/resources/mapper/HouseUserDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-house/src/test/java/com/guigu/DicTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/guigu/controller/HouseBrokerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/guigu/controller/HouseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/guigu/controller/HouseUserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/webapp/WEB-INF/templates/community/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/webapp/WEB-INF/templates/community/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/webapp/WEB-INF/templates/house/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/webapp/WEB-INF/templates/house/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/webapp/WEB-INF/templates/house/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/webapp/WEB-INF/templates/house/show.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/webapp/WEB-INF/templates/houseBroker/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/webapp/WEB-INF/templates/houseBroker/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/webapp/WEB-INF/templates/houseUser/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/webapp/WEB-INF/templates/houseUser/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-util/src/main/java/com/guigu/util/QiniuUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-util/src/test/java/com/guigu/QiniuTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/guigu/controller/HouseImageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/webapp/WEB-INF/templates/admin/upload.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/webapp/WEB-INF/templates/house/upload.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-util/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common-util/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common-util/target/common-util-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common-util/target/common-util-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/guigu/entity/Dict.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/guigu/entity/Dict.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/guigu/entity/Dict.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/guigu/entity/Dict.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/model-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/model-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-api/src/main/java/com/guigu/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-api/src/main/java/com/guigu/service/AdminService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-api/src/main/java/com/guigu/service/CommunityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-api/src/main/java/com/guigu/service/CommunityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-api/target/classes/com/guigu/service/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-api/target/classes/com/guigu/service/AdminService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-api/target/classes/com/guigu/service/CommunityService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-api/target/classes/com/guigu/service/CommunityService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/service-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/service-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-api/target/service-api-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/service-api/target/service-api-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-acl/src/main/java/com/guigu/dao/AdminDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-acl/src/main/java/com/guigu/dao/AdminDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-acl/src/main/java/com/guigu/service/impl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-acl/src/main/java/com/guigu/service/impl/AdminServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-util/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/common-util/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-util/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/common-util/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service-acl/src/main/resources/mapper/AdminDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-acl/src/main/resources/mapper/AdminDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-acl/target/classes/com/guigu/dao/AdminDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-acl/target/classes/com/guigu/dao/AdminDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-acl/target/classes/com/guigu/service/impl/AdminServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-acl/target/classes/com/guigu/service/impl/AdminServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-acl/target/classes/mapper/AdminDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-acl/target/classes/mapper/AdminDao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service-acl/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-acl/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service-acl/target/service-acl-1.0.war" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-acl/target/service-acl-1.0.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-acl/target/service-acl-1.0/WEB-INF/classes/com/guigu/dao/AdminDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-acl/target/service-acl-1.0/WEB-INF/classes/com/guigu/dao/AdminDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-acl/target/service-acl-1.0/WEB-INF/classes/com/guigu/service/impl/AdminServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-acl/target/service-acl-1.0/WEB-INF/classes/com/guigu/service/impl/AdminServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-acl/target/service-acl-1.0/WEB-INF/classes/mapper/AdminDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-acl/target/service-acl-1.0/WEB-INF/classes/mapper/AdminDao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service-acl/target/service-acl-1.0/WEB-INF/lib/common-util-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-acl/target/service-acl-1.0/WEB-INF/lib/common-util-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-acl/target/service-acl-1.0/WEB-INF/lib/model-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-acl/target/service-acl-1.0/WEB-INF/lib/model-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-acl/target/service-acl-1.0/WEB-INF/lib/service-api-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-acl/target/service-acl-1.0/WEB-INF/lib/service-api-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-house/src/main/java/com/guigu/dao/CommunityDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-house/src/main/java/com/guigu/dao/CommunityDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-house/src/main/java/com/guigu/dao/DictDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-house/src/main/java/com/guigu/dao/DictDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-house/src/main/java/com/guigu/service/impl/CommunityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-house/src/main/java/com/guigu/service/impl/CommunityServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-house/src/main/resources/mapper/CommunityDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-house/src/main/resources/mapper/CommunityDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-house/target/classes/com/guigu/dao/CommunityDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-house/target/classes/com/guigu/dao/CommunityDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-house/target/classes/com/guigu/dao/DictDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-house/target/classes/com/guigu/dao/DictDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-house/target/classes/com/guigu/service/impl/CommunityServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-house/target/classes/com/guigu/service/impl/CommunityServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-house/target/classes/mapper/CommunityDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-house/target/classes/mapper/CommunityDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-house/src/main/resources/mapper/HouseImageDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-house/src/main/resources/mapper/HouseImageDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-house/target/classes/mapper/HouseImageDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-house/target/classes/mapper/HouseImageDao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service-house/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-house/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-house/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-house/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-house/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-house/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-house/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-house/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service-house/target/service-house-1.0.war" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-house/target/service-house-1.0.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-house/target/service-house-1.0/WEB-INF/classes/com/guigu/dao/CommunityDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-house/target/service-house-1.0/WEB-INF/classes/com/guigu/dao/CommunityDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-house/target/service-house-1.0/WEB-INF/classes/com/guigu/dao/DictDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-house/target/service-house-1.0/WEB-INF/classes/com/guigu/dao/DictDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-house/target/service-house-1.0/WEB-INF/classes/com/guigu/service/impl/CommunityServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-house/target/service-house-1.0/WEB-INF/classes/com/guigu/service/impl/CommunityServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-house/target/service-house-1.0/WEB-INF/classes/mapper/CommunityDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-house/target/service-house-1.0/WEB-INF/classes/mapper/CommunityDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-house/target/service-house-1.0/WEB-INF/classes/com/guigu/service/impl/HouseUserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-house/target/service-house-1.0/WEB-INF/classes/com/guigu/service/impl/HouseUserServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service-house/target/service-house-1.0/WEB-INF/lib/common-util-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-house/target/service-house-1.0/WEB-INF/lib/common-util-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-house/target/service-house-1.0/WEB-INF/lib/model-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-house/target/service-house-1.0/WEB-INF/lib/model-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-house/target/service-house-1.0/WEB-INF/lib/service-api-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-house/target/service-house-1.0/WEB-INF/lib/service-api-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/java/com/guigu/controller/CommunityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/guigu/controller/CommunityController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web-admin/target/classes/com/guigu/controller/CommunityController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/target/classes/com/guigu/controller/CommunityController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/java/com/guigu/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/guigu/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/resources/spring/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/resources/spring/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/webapp/WEB-INF/templates/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/webapp/WEB-INF/templates/admin/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/webapp/WEB-INF/templates/house/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/webapp/WEB-INF/templates/house/show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/webapp/static/js/demo/webuploader-demo.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/webapp/static/js/demo/webuploader-demo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/target/classes/com/guigu/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/target/classes/com/guigu/controller/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/target/classes/spring/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/target/classes/spring/spring-mvc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/web-admin/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/web-admin/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/web-admin/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/web-admin/target/web-admin-1.0.war" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/target/web-admin-1.0.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web-admin/target/web-admin-1.0/WEB-INF/classes/com/guigu/controller/CommunityController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/target/web-admin-1.0/WEB-INF/classes/com/guigu/controller/CommunityController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web-admin/target/web-admin-1.0/WEB-INF/classes/com/guigu/controller/DictController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/target/web-admin-1.0/WEB-INF/classes/com/guigu/controller/DictController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/target/web-admin-1.0/WEB-INF/classes/spring/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/target/web-admin-1.0/WEB-INF/classes/spring/spring-mvc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/web-admin/target/web-admin-1.0/WEB-INF/lib/common-util-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/target/web-admin-1.0/WEB-INF/lib/common-util-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web-admin/target/web-admin-1.0/WEB-INF/lib/model-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/target/web-admin-1.0/WEB-INF/lib/model-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web-admin/target/web-admin-1.0/WEB-INF/lib/service-api-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/target/web-admin-1.0/WEB-INF/lib/service-api-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/target/web-admin-1.0/WEB-INF/templates/house/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/target/web-admin-1.0/WEB-INF/templates/house/show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/target/web-admin-1.0/static/js/demo/webuploader-demo.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/target/web-admin-1.0/static/js/demo/webuploader-demo.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -169,7 +118,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/service/service-house/src/main/resources/mapper" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/common-util/src/main/java/com/guigu/util" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -183,11 +132,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\research\JAVA\javaP\shf-parent\common-util\src\main\java\com\guigu\util" />
       <recent name="E:\research\JAVA\javaP\shf-parent\service\service-house\src\main\resources\mapper" />
       <recent name="E:\research\JAVA\javaP\shf-parent\web\web-admin\src\main\webapp\static\js\plugins" />
       <recent name="E:\research\JAVA\javaP\shf-parent\service\service-house\src\main\resources" />
       <recent name="E:\research\JAVA\javaP\shf-parent\service\service-house\src\main\resources\spring" />
-      <recent name="E:\research\JAVA\javaP\shf-parent\service\service-acl\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\research\JAVA\javaP\shf-parent\web\web-admin\src\main\webapp\WEB-INF\templates\community" />
@@ -210,7 +159,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DicTest.testFindListByParentId">
+  <component name="RunManager" selected="JUnit.QiniuTest.testUpload">
     <configuration name="DicTest.testFindListByParentId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="service-house" />
       <extension name="coverage">
@@ -222,6 +171,22 @@
       <option name="PACKAGE_NAME" value="com.guigu" />
       <option name="MAIN_CLASS_NAME" value="com.guigu.DicTest" />
       <option name="METHOD_NAME" value="testFindListByParentId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QiniuTest.testUpload" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="common-util" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.guigu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.guigu" />
+      <option name="MAIN_CLASS_NAME" value="com.guigu.QiniuTest" />
+      <option name="METHOD_NAME" value="testUpload" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -379,6 +344,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.QiniuTest.testUpload" />
         <item itemvalue="JUnit.DicTest.testFindListByParentId" />
       </list>
     </recent_temporary>
@@ -425,7 +391,7 @@
       <workItem from="1663569170592" duration="10983000" />
       <workItem from="1663655889332" duration="16945000" />
       <workItem from="1663741700536" duration="14021000" />
-      <workItem from="1663830745354" duration="37884000" />
+      <workItem from="1663830745354" duration="50308000" />
     </task>
     <servers />
   </component>

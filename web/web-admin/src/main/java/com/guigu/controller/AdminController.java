@@ -4,13 +4,17 @@ import com.alibaba.dubbo.config.annotation.Reference;
 import com.github.pagehelper.PageInfo;
 import com.guigu.entity.Admin;
 import com.guigu.service.AdminService;
+import com.guigu.util.QiniuUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
+import java.io.IOException;
 import java.util.Map;
+import java.util.UUID;
 
 @Controller
 @RequestMapping("/admin")
@@ -65,6 +69,35 @@ public class AdminController extends BaseController {
     public String update(Admin admin){
         //调用AdminService中更新的方法
         adminService.update(admin);
+        return "common/successPage";
+    }
+    //去上传头像的页面
+    @RequestMapping("uploadShow/{id}")
+    public String goUploadPage(@PathVariable("id") Long id,Map map){
+        //放入request域中
+        map.put("id",id);
+        return "admin/upload";
+    }
+    //上传头像
+    @RequestMapping("/upload/{id}")
+    public String upload(@PathVariable("id") Long id, MultipartFile file){
+        try {
+            //根据AdminService中genuineid查询用户的方法
+            Admin admin = adminService.getById(id);
+            //获取文件的名字
+            byte[] bytes = file.getBytes();
+            //根据UUID随机生成一个文件名
+            String fileName = UUID.randomUUID().toString();
+            //通过工具类上传到七牛云
+            QiniuUtils.upload2Qiniu(bytes,fileName);
+            //给用户设置头像地址
+            admin.setHeadUrl("http://ripfkt1nq.hn-bkt.clouddn.com/"+fileName);
+            //调用AdminService中更新的方法
+             adminService.update(admin);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         return "common/successPage";
     }
 }

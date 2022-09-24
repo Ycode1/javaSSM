@@ -192,6 +192,17 @@
             var id = $(this).attr("data-id");
             opt.confirm('/houseUser/delete/[[${house.id}]]/'+id);
         });
+        //操作房源或房产图片
+        $("#upload1").on("click",function(){
+            opt.openWin('/houseImage/uploadShow/[[${house.id}]]/1','上传房源图片',580,430);
+        });
+        $("#upload2").on("click",function(){
+            opt.openWin('/houseImage/uploadShow/[[${house.id}]]/2','上传房产图片',580,430);
+        });
+        $(".deleteImages").on("click",function(){
+            var id = $(this).attr("data-id");
+            opt.confirm('/houseImage/delete/[[${house.id}]]/'+id);
+        });
     });
 </script>
 </body>

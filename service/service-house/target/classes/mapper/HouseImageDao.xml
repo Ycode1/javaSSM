@@ -15,6 +15,18 @@
         <include refid="columns"></include>
         where house_id = #{houseId} and type = #{type} and is_deleted = 0
     </select>
+
+<!--    添加-->
+        <insert id="insert">
+            insert into db_house.hse_house_image(house_id, image_name, image_url, type )
+            values(#{houseId},#{imageName},#{imageUrl},#{type})
+        </insert>
+<!--    删除-->
+    <update id="delete">
+        update db_house.hse_house_image set is_deleted = 1 where id = #{id}
+    </update>
+
+
 </mapper>
 
 
