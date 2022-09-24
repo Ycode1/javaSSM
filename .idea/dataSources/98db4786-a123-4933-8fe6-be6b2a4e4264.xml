@@ -15,7 +15,7 @@
       <Collation>utf8_bin</Collation>
     </schema>
     <schema id="4" parent="1" name="db_house">
-      <Collation>latin1_swedish_ci</Collation>
+      <Collation>utf8_general_ci</Collation>
     </schema>
     <schema id="5" parent="1" name="db_mybatis">
       <Collation>utf8_general_ci</Collation>
@@ -946,7 +946,6 @@
     </table>
     <table id="241" parent="4" name="acl_admin_role">
       <Comment>用户角色</Comment>
-      <Collation>utf8_general_ci</Collation>
     </table>
     <table id="242" parent="4" name="acl_permission">
       <Comment>权限</Comment>
@@ -954,43 +953,33 @@
     </table>
     <table id="243" parent="4" name="acl_role">
       <Comment>角色</Comment>
-      <Collation>utf8_general_ci</Collation>
     </table>
     <table id="244" parent="4" name="acl_role_permission">
       <Comment>角色权限</Comment>
-      <Collation>utf8_general_ci</Collation>
     </table>
     <table id="245" parent="4" name="hse_community">
       <Comment>小区信息</Comment>
-      <Collation>utf8_general_ci</Collation>
     </table>
     <table id="246" parent="4" name="hse_dict">
       <Comment>组织架构表</Comment>
-      <Collation>utf8_general_ci</Collation>
     </table>
     <table id="247" parent="4" name="hse_house">
       <Comment>房源表</Comment>
-      <Collation>utf8_general_ci</Collation>
     </table>
     <table id="248" parent="4" name="hse_house_broker">
       <Comment>房源经纪人</Comment>
-      <Collation>utf8_general_ci</Collation>
     </table>
     <table id="249" parent="4" name="hse_house_image">
       <Comment>房源图片</Comment>
-      <Collation>utf8_general_ci</Collation>
     </table>
     <table id="250" parent="4" name="hse_house_user">
       <Comment>房东信息表</Comment>
-      <Collation>utf8_general_ci</Collation>
     </table>
     <table id="251" parent="4" name="user_follow">
       <Comment>用户关注表</Comment>
-      <Collation>utf8_general_ci</Collation>
     </table>
     <table id="252" parent="4" name="user_info">
       <Comment>用户表</Comment>
-      <Collation>utf8_general_ci</Collation>
     </table>
     <column id="253" parent="236" name="id">
       <Position>1</Position>

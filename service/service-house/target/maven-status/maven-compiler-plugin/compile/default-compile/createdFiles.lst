@@ -1,4 +1,12 @@
+com\guigu\dao\HouseUserDao.class
+com\guigu\dao\HouseBrokerDao.class
+com\guigu\service\impl\HouseImageServiceImpl.class
+com\guigu\service\impl\HouseServiceImpl.class
+com\guigu\dao\CommunityDao.class
+com\guigu\service\impl\HouseUserServiceImpl.class
 com\guigu\dao\DictDao.class
 com\guigu\service\impl\CommunityServiceImpl.class
+com\guigu\dao\HouseImageDao.class
+com\guigu\dao\HouseDao.class
 com\guigu\service\impl\DictServiceImpl.class
-com\guigu\dao\CommunityDao.class
+com\guigu\service\impl\HouseBrokerServiceImpl.class

@@ -4,7 +4,7 @@ import com.guigu.entity.Dict;
 
 import java.util.List;
 
-public interface DictDao {
+public interface DictDao extends BaseDao<Dict>{
 //根据父id获取该节点下所有的子节点
     List<Dict> findListByParentId(Long id);
 //根据父id判断该节点是否是父节点

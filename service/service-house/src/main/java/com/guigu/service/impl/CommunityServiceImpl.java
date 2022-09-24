@@ -13,6 +13,8 @@ import com.guigu.util.CastUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.io.Serializable;
+import java.util.List;
 import java.util.Map;
 
 @Service(interfaceClass = CommunityService.class)
@@ -49,5 +51,23 @@ public class CommunityServiceImpl extends BaseServiceImpl<Community> implements 
             community.setPlateName(plateName);
         }
         return new PageInfo<>(page,10);
+    }
+
+    @Override
+    public List<Community> findAll() {
+        return communityDao.findAll();
+    }
+
+    @Override
+    public Community getById(Serializable id) {
+        Community community = communityDao.getById(id);
+        //根据区域的id获取区域的名字
+        String areaName = dictDao.getNameById(community.getAreaId());
+        //根据板块的id获取板块的名字
+        String plateName = dictDao.getNameById(community.getPlateId());
+        //给community对象的区域和板块名赋值
+        community.setAreaName(areaName);
+        community.setPlateName(plateName);
+        return community;
     }
 }

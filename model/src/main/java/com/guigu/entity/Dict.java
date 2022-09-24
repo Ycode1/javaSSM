@@ -37,5 +37,13 @@ public class Dict extends BaseEntity {
 		return this.dictCode;
 	}
 
+	@Override
+	public String toString() {
+		return "Dict{" +
+				"parentId=" + parentId +
+				", name='" + name + '\'' +
+				", dictCode='" + dictCode + '\'' +
+				'}';
+	}
 }
 
