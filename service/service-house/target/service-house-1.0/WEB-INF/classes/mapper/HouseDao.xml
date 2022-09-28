@@ -134,6 +134,62 @@
         where
             id = #{id}
     </update>
+
+<!--    前端分页及带条件查询的方法-->
+    <select id="findPageList" resultType="com.guigu.vo.HouseVo">
+        select hc.name communityName ,hh.*
+        from db_house.hse_house hh
+                left join db_house.hse_community hc
+                            on hh.community_id = hc.id
+        <where>
+              <if test="areaId != null and areaId != ''">
+                  area_Id = #{areaId} and
+              </if>
+              <if test="plateId != null and plateId != ''">
+                  plate_Id = #{plateId} and
+              </if>
+              <if test="keyword != null and keyword != ''">
+                  keyword = #{keyword} and
+              </if>
+              <if test="totalPrice != null and totalPrice != ''">
+                  total_Price = #{totalPrice} and
+              </if>
+              <if test="houseTypeId != null and houseTypeId != ''">
+                  house_Type_Id = #{houseTypeId} and
+              </if>
+              <if test="floorId != null and floorId != ''">
+                  floor_Id = #{floorId} and
+              </if>
+              <if test="buildStructureId != null and buildStructureId != ''">
+                  build_Structure_Id = #{buildStructureId} and
+              </if>
+              <if test="directionId != null and directionId != ''">
+                  direction_Id = #{directionId} and
+              </if>
+              <if test="decorationId != null and decorationId != ''">
+                  decoration_Id = #{decorationId} and
+              </if>
+              <if test="houseUseId != null and houseUseId != ''">
+                  house_Use_Id = #{houseUseId} and
+              </if>
+              hh.is_deleted = 0 and hh.status = 1
+            and hc.is_deleted = 0
+        </where>
+        <if test="defaultSort == 1 ">
+            order by hh.id desc
+        </if>
+        <if test="priceSort == 1 ">
+            order by hh.total_price desc
+        </if>
+        <if test="timeSort == 1 ">
+            order by hh.create_time desc
+        </if>
+
+
+
+
+    </select>
+
 </mapper>
 
 

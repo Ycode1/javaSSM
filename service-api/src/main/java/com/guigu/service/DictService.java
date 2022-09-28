@@ -12,4 +12,5 @@ public interface DictService {
     List<Dict> findListByParentId(Long parentId);
     //根据编码获取该节点下所有的子节点
     List<Dict> findListByDictCode(String dictCode);
+    String getNameById(Long id );
 }

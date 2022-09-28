@@ -61,7 +61,7 @@
                 phone = #{phone},
             </if>
             <if test="headUrl != null and name != ''">
-                headUrl = #{headUrl},
+                head_Url = #{headUrl},
             </if>
         </set>
         where id = #{id}

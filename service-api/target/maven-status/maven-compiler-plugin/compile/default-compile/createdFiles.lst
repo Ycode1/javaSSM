@@ -3,6 +3,8 @@ com\guigu\service\RoleService.class
 com\guigu\service\HouseBrokerService.class
 com\guigu\service\HouseImageService.class
 com\guigu\service\HouseUserService.class
+com\guigu\service\UserFollowService.class
 com\guigu\service\CommunityService.class
 com\guigu\service\AdminService.class
 com\guigu\service\HouseService.class
+com\guigu\service\UserInfoService.class

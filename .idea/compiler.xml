@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="common-util" />
+        <module name="web-front" />
         <module name="service-house" />
         <module name="web-admin" />
         <module name="model" />
         <module name="serviceacl" />
+        <module name="service-user" />
         <module name="service-api" />
       </profile>
     </annotationProcessing>
@@ -20,10 +22,12 @@
       <module name="service" target="1.8" />
       <module name="service-api" target="1.8" />
       <module name="service-house" target="1.8" />
+      <module name="service-user" target="1.8" />
       <module name="serviceacl" target="1.8" />
       <module name="shf-parent" target="1.8" />
       <module name="web" target="1.8" />
       <module name="web-admin" target="1.8" />
+      <module name="web-front" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

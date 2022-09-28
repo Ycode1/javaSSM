@@ -3,6 +3,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/service/service-acl" />
     <file type="web" url="file://$PROJECT_DIR$/service/service-house" />
+    <file type="web" url="file://$PROJECT_DIR$/service/service-user" />
     <file type="web" url="file://$PROJECT_DIR$/web" />
     <file type="web" url="file://$PROJECT_DIR$/web-admin" />
   </component>

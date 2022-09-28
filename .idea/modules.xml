@@ -7,10 +7,12 @@
       <module fileurl="file://$PROJECT_DIR$/service/service.iml" filepath="$PROJECT_DIR$/service/service.iml" />
       <module fileurl="file://$PROJECT_DIR$/service-api/service-api.iml" filepath="$PROJECT_DIR$/service-api/service-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/service/service-house/service-house.iml" filepath="$PROJECT_DIR$/service/service-house/service-house.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service/service-user/service-user.iml" filepath="$PROJECT_DIR$/service/service-user/service-user.iml" />
       <module fileurl="file://$PROJECT_DIR$/service/service-acl/serviceacl.iml" filepath="$PROJECT_DIR$/service/service-acl/serviceacl.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/shf-parent.iml" filepath="$PROJECT_DIR$/.idea/shf-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/web/web.iml" filepath="$PROJECT_DIR$/web/web.iml" />
       <module fileurl="file://$PROJECT_DIR$/web/web-admin/web-admin.iml" filepath="$PROJECT_DIR$/web/web-admin/web-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web/web-front/web-front.iml" filepath="$PROJECT_DIR$/web/web-front/web-front.iml" />
     </modules>
   </component>
 </project>

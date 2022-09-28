@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mybatis-spring="http://mybatis.org/schema/mybatis-spring"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://mybatis.org/schema/mybatis-spring http://mybatis.org/schema/mybatis-spring.xsd">
+
+    <context:property-placeholder location="classpath:db.properties"></context:property-placeholder>
+
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" destroy-method="close">
+        <property name="username" value="${jdbc.username}"></property>
+        <property name="password" value="${jdbc.password}"></property>
+        <property name="url" value="${jdbc.url}"></property>
+        <property name="driverClassName" value="${jdbc.driverClassName}"></property>
+    </bean>
+
+    <!--1、spring和mybatis整合的工厂bean-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+<!--       配置数据源属性-->
+        <property name="dataSource" ref="dataSource" ></property>
+<!--配置给实体类包下所有的类起别名-->
+        <property name="typeAliasesPackage" value="com.guigu.entity"></property>
+        <!--        配置mybatis的全局配置文件的路径-->
+        <property name="configLocation" value="classpath:mybatis-config.xml" />
+<!--       配置Mapper映射文件的路径 也就是controller类-->
+        <property name="mapperLocations" value=" classpath:mapper/*.xml"></property>
+
+
+    </bean>
+    <!--2、批量扫描接口生成代理对象 也就是扫描Mapper接口-->
+    <mybatis-spring:scan base-package="com.guigu.dao"></mybatis-spring:scan>
+</beans>
