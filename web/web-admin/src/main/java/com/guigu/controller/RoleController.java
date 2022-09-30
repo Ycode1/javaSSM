@@ -7,6 +7,7 @@ import com.guigu.service.PermissionService;
 import com.guigu.service.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpRequest;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -38,6 +39,7 @@ public class RoleController extends BaseController{
 //        return "role/index";
 //    }
     //分页及带条件查询的方法
+    @PreAuthorize("hasAuthority('role.show')")
     @RequestMapping
     public String index(Map map, HttpServletRequest request){
         //获取请求参数
@@ -55,13 +57,14 @@ public class RoleController extends BaseController{
     }
 
 
-
+    @PreAuthorize("hasAuthority('role.create')")
     //去添加角色的页面
     @RequestMapping("/create")
     public String goAddPage(){
         return "role/create";
     }
     //添加角色
+    @PreAuthorize("hasAuthority('role.create')")
     @RequestMapping("/save")
     public String save(Role role){
         //调用RoleService中添加的方法
@@ -72,6 +75,7 @@ public class RoleController extends BaseController{
         return SUCCESS_PAGE;
     }
     //删除角色
+    @PreAuthorize("hasAuthority('role.delete')")
     @RequestMapping("/delete/{roleId}")
     public String delete(@PathVariable("roleId") Long roleId){
         //调用RoleServce中的删除方法
@@ -80,6 +84,7 @@ public class RoleController extends BaseController{
         return "redirect:/role";
     }
     //去修改页面的方法
+    @PreAuthorize("hasAuthority('role.edit')")
     @RequestMapping("/edit/{roleId}")
     public String goEditPage(@PathVariable("roleId") Long roleId,Map map){
         //调用roleService中根据id查询的方法
@@ -90,6 +95,7 @@ public class RoleController extends BaseController{
         return "role/edit";
     }
     //更新角色
+    @PreAuthorize("hasAuthority('role.edit')")
     @RequestMapping("/update")
     public String update(Role role){
         //调用roleService中更新的方法
@@ -99,6 +105,7 @@ public class RoleController extends BaseController{
     }
 
     //去分配权限的页面
+    @PreAuthorize("hasAuthority('role.assign')")
     @RequestMapping("/assignShow/{roleId}")
     public String goAssignShowPage(@PathVariable("roleId") Long roleId ,Map map){
         //将角色id放到request域中
@@ -110,6 +117,7 @@ public class RoleController extends BaseController{
         return "role/assignShow" ;
     }
     //分配权限
+    @PreAuthorize("hasAuthority('role.assign')")
     @RequestMapping("/assignPermission")
     public String assignPermission(@RequestParam("roleId") Long roleId , @RequestParam("permissionIds") Long[] permissionIds){
         //调用PermissionService中分配权限的方法

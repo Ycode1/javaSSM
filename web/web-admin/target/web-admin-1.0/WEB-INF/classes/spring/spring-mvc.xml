@@ -6,7 +6,7 @@
 <!--    引入spring-registry.xml的配置文件-->
     <import resource="spring-registry.xml"></import>
     <!--包扫描-->
-    <context:component-scan base-package="com.guigu.controller" />
+    <context:component-scan base-package="com.guigu" />
 
     <!-- 没有匹配上的url全部按默认方式（就是直接访问）访问，避免拦截静态资源 -->
     <mvc:default-servlet-handler/>

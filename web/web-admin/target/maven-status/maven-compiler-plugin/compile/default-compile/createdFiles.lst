@@ -1,7 +1,10 @@
 com\guigu\controller\AdminController.class
+com\guigu\config\MySpringSecurityConfig.class
 com\guigu\controller\HouseController.class
 com\guigu\controller\CommunityController.class
+com\guigu\config\CustomAccessDeinedHandler.class
 com\guigu\controller\PermissionController.class
+com\guigu\config\MyUserDetailService.class
 com\guigu\controller\HouseUserController.class
 com\guigu\controller\RoleController.class
 com\guigu\controller\HouseBrokerController.class

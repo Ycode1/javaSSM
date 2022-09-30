@@ -31,7 +31,14 @@
         order by c.sort
     </select>
 
-    <select id="findCodeListByAdminId" resultType="string">
+<!--    获取所有的权限码-->
+    <select id="getAllPermissionCode" resultType="string">
+        select code from db_house.acl_permission
+        where type = 2 and is_deleted = 0
+    </select>
+
+<!--    根据用户的id查询对应的全限码-->
+    <select id="getPermissionCodeByAdminId" resultType="string">
         select distinct c.code
         from db_house.acl_admin_role a
                  inner join  db_house.acl_role_permission b on b.role_id = a.role_id
@@ -47,7 +54,7 @@
     <select id="getById" resultType="permission">
         select parent_id
         from db_house.acl_permission
-        where id = #{id}
+        where  id = #{id}
     </select>
 
 <!--    插入-->
