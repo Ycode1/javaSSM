@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.guigu.dao.PermissionDao">
+
+    <!-- 用于select查询公用抽取的列 -->
+    <sql id="columns">
+        select id, parent_id, name, url, code, type, sort, create_time, update_time, is_deleted
+        from db_house.acl_permission
+	</sql>
+<!--查询所有权限-->
+        <select id="findAll" resultType="permission">
+            <include refid="columns"></include>
+            where is_deleted = 0
+        </select>
+<!--    根据用户的id查询对应的权限菜单-->
+    <select id="getMenuPermissionByAdminId" resultType="permission">
+        select
+            distinct c.*
+        from db_house.acl_admin_role a
+                 inner join db_house.acl_role_permission b on b.role_id = a.role_id
+                 inner join db_house.acl_permission c on c.id = b.permission_id
+        where
+            a.admin_id = #{adminId}
+          and c.type = 1
+          and a.is_deleted = 0
+          and b.is_deleted = 0
+          and c.is_deleted = 0
+        order by c.sort
+    </select>
+
+    <select id="findCodeListByAdminId" resultType="string">
+        select distinct c.code
+        from db_house.acl_admin_role a
+                 inner join  db_house.acl_role_permission b on b.role_id = a.role_id
+                 inner join  db_house.acl_permission c on c.id = b.permission_id
+        where a.admin_id = #{adminId} and c.type = 2
+          and a.is_deleted = 0 and b.is_deleted = 0 and c.is_deleted = 0
+    </select>
+
+
+
+
+<!--    查询id    -->
+    <select id="getById" resultType="permission">
+        select parent_id
+        from db_house.acl_permission
+        where  id = #{id}
+    </select>
+
+<!--    插入-->
+    <insert id="insert">
+        insert into db_house.acl_permission(parent_id, name, url, code, sort)
+        values(#{parentId},#{name},#{url},#{code},#{sort})
+    </insert>
+
+
+
+<!--    删除-->
+    <update id="delete">
+        update db_house.acl_permission set is_deleted = 1
+        where id = #{id}
+    </update>
+
+<!--    更新-->
+    <update id="update">
+        update db_house.acl_permission set
+        <if test="parentId != null and parentId != ''">parent_Id = #{parentId},</if>
+        <if test="name != null and name != ''">name = #{name},</if>
+        <if test="url != null and url != ''">url = #{url},</if>
+        <if test="code != null and code != ''">code = #{code},</if>
+        <if test="type != null and type != ''">type = #{type},</if>
+        <if test="sort != null and sort != ''">sort = #{sort},</if>
+        where id = #{id};
+    </update>
+
+
+</mapper>
+

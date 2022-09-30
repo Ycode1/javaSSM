@@ -1,4 +1,5 @@
 com\guigu\service\DictService.class
+com\guigu\service\PermissionService.class
 com\guigu\service\RoleService.class
 com\guigu\service\HouseBrokerService.class
 com\guigu\service\HouseImageService.class

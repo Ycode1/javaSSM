@@ -3,12 +3,14 @@ package com.guigu.controller;
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.github.pagehelper.PageInfo;
 import com.guigu.entity.Role;
+import com.guigu.service.PermissionService;
 import com.guigu.service.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -23,6 +25,10 @@ public class RoleController extends BaseController{
     public static final String SUCCESS_PAGE="common/successPage";
     @Reference
     private RoleService roleService;
+    @Reference
+    private PermissionService permissionService ;
+
+
 //    @RequestMapping
 //    public String index(Map map ){
 //        //调用RoleService中获取所有的角色的办法
@@ -92,6 +98,23 @@ public class RoleController extends BaseController{
         return SUCCESS_PAGE;
     }
 
-
+    //去分配权限的页面
+    @RequestMapping("/assignShow/{roleId}")
+    public String goAssignShowPage(@PathVariable("roleId") Long roleId ,Map map){
+        //将角色id放到request域中
+        map.put("roleId",roleId);
+        //调用PermissionService中根据角色id 获取权限的方法
+        List<Map<String,Object>> zNodes = permissionService.findPermissionByRole(roleId);
+            //放入request域中
+        map.put("zNodes",zNodes);
+        return "role/assignShow" ;
+    }
+    //分配权限
+    @RequestMapping("/assignPermission")
+    public String assignPermission(@RequestParam("roleId") Long roleId , @RequestParam("permissionIds") Long[] permissionIds){
+        //调用PermissionService中分配权限的方法
+        permissionService.assignPermisssion(roleId,permissionIds);
+        return "common/successPage";
+    }
 
 }

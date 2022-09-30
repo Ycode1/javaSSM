@@ -11,6 +11,7 @@ com\guigu\entity\HouseBroker.class
 com\guigu\vo\LoginVo.class
 com\guigu\entity\HouseUser.class
 com\guigu\entity\RolePermission.class
+com\guigu\helper\PermissionHelper.class
 com\guigu\entity\Admin.class
 com\guigu\entity\BaseEntity.class
 com\guigu\entity\HouseImage.class

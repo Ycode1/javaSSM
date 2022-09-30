@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="renderer" content="webkit" />
 
-    <title>尚好房平台管理系统</title>
+    <title>找好房平台管理系统</title>
 
-    <meta name="keywords" content="尚好房平台管理系统,后台HTML,响应式后台" />
-    <meta name="description" content="尚好房平台管理系统,后台HTML,响应式后台" />
+    <meta name="keywords" content="找好房平台管理系统,后台HTML,响应式后台" />
+    <meta name="description" content="找好房平台管理系统,后台HTML,响应式后台" />
 
     <!--[if lt IE 9]>
     <meta http-equiv="refresh" content="0;ie.html" />
@@ -31,12 +31,12 @@
             <ul class="nav" id="side-menu">
                 <li class="nav-header">
                     <div class="dropdown profile-element">
-                        <span><img alt="image" class="img-circle" src="/static/img/profile_small.jpg" /></span>
+                        <span><img alt="image" class="img-circle" th:src="${admin.headUrl}" style="width: 50px;height: 50px;"/></span>
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                           <span class="clear">
-                              <span class="block m-t-xs"><strong class="font-bold">Beaut-zihan</strong></span>
-                              <span class="text-muted text-xs block">超级管理员<b class="caret"></b></span>
-                           </span>
+                  <span class="clear">
+                     <span class="block m-t-xs"><strong class="font-bold" th:text="${admin.name}">Beaut-zihan</strong></span>
+                     <span class="text-muted text-xs block">超级管理员<b class="caret"></b></span>
+                  </span>
                         </a>
                         <ul class="dropdown-menu animated fadeInRight m-t-xs">
                             <li><a class="J_menuItem" href="javascript:">修改头像</a></li>
@@ -49,42 +49,14 @@
                     </div>
                     <div class="logo-element">H+</div>
                 </li>
-                <li>
+                <li th:each="one: ${permissionList}">
                     <a href="#">
                         <i class="fa fa-home"></i>
-                        <span class="nav-label">权限管理</span>
+                        <span class="nav-label" th:text="${one.name}">系统管理</span>
                         <span class="fa arrow"></span>
                     </a>
-                    <ul class="nav nav-second-level">
-                        <li>
-                            <a class="J_menuItem" href="/role"  >角色管理</a>
-                        </li>
-                        <li>
-                            <a class="J_menuItem" href="/admin">用户管理</a>
-                        </li>
-                        <li>
-                            <a class="J_menuItem" href="index_v3.html">主页示例三</a>
-                        </li>
-
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa fa-home"></i>
-                        <span class="nav-label">二手房管理</span>
-                        <span class="fa arrow"></span>
-                    </a>
-                    <ul class="nav nav-second-level">
-                        <li>
-                            <a class="J_menuItem" href="/dict"  >数据字典</a>
-                        </li>
-                        <li>
-                            <a class="J_menuItem" href="/community">小区管理</a>
-                        </li>
-                        <li>
-                            <a class="J_menuItem" href="/house">房源管理</a>
-                        </li>
-
+                    <ul class="nav nav-second-level collapse">
+                        <li th:each="two,it: ${one.children}"><a class="J_menuItem" th:href="${two.url}" th:data-index="${it.count}" th:text="${two.name}">用户管理</a></li>
                     </ul>
                 </li>
             </ul>

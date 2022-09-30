@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.guigu.dao.RolePermissionDao">
+
+    <!-- 用于select查询公用抽取的列 -->
+    <sql id="columns">
+        select id, role_id, permission_id, create_time, update_time, is_deleted
+        from db_house.acl_role_permission
+	</sql>
+<!--    根据角色id查询已经分配的权限id-->
+    <select id="findPermissionIdsByRole" resultType="long">
+        select permission_id
+        from db_house.acl_role_permission
+        where role_id = #{roleId}
+        and is_deleted = 0
+    </select>
+
+<!--    根据角色id删除所有的权限-->
+    <update id="deletePermissionIdsByRoleId">
+        update db_house.acl_role_permission set is_deleted = 1
+        where role_id = #{roleId}
+    </update>
+<!--    添加角色id和权限id-->
+    <insert id="addRoleAndPermission">
+        insert into db_house.acl_role_permission(role_id,permission_id)
+        values(#{roleId},#{permissionId})
+    </insert>
+
+</mapper>
+

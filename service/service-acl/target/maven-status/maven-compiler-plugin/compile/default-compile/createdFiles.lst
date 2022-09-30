@@ -1,4 +1,8 @@
+com\guigu\dao\AdminRoleDao.class
 com\guigu\service\impl\AdminServiceImpl.class
 com\guigu\service\impl\RoleServiceImpl.class
-com\guigu\dao\RoleDao.class
 com\guigu\dao\AdminDao.class
+com\guigu\service\impl\PermissionServiceImpl.class
+com\guigu\dao\RolePermissionDao.class
+com\guigu\dao\PermissionDao.class
+com\guigu\dao\RoleDao.class

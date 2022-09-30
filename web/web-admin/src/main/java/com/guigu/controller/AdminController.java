@@ -4,9 +4,11 @@ import com.alibaba.dubbo.config.annotation.Reference;
 import com.github.pagehelper.PageInfo;
 import com.guigu.entity.Admin;
 import com.guigu.service.AdminService;
+import com.guigu.service.RoleService;
 import com.guigu.util.QiniuUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.multipart.MultipartFile;
@@ -21,6 +23,8 @@ import java.util.UUID;
 public class AdminController extends BaseController {
     @Reference
     private AdminService adminService;
+    @Reference
+    private RoleService roleService ;
     //分页及带条件的查询
     @RequestMapping
     public String findPage(Map map, HttpServletRequest request){
@@ -100,4 +104,23 @@ public class AdminController extends BaseController {
         }
         return "common/successPage";
     }
+    //去分配角色的页面
+    @RequestMapping("/assignShow/{adminId}")
+    public String goAssignShowPage(@PathVariable("adminId") Long adminId, ModelMap modelMap){
+        //将用户的id放到request域中
+        modelMap.addAttribute("adminId",adminId);
+        //调用RoleService中的方法
+        Map<String,Object> rolesByAdminId = roleService.findRolesByAdminId(adminId);
+        //将map放入request域中
+        modelMap.addAllAttributes(rolesByAdminId);
+        return "admin/assignShow";
+    }
+    //分配角色
+    @RequestMapping("/assignRole")
+    public String assignRole(Long adminId , Long[] roleIds){
+        //调用RoleService中分配角色中的方法
+        roleService.assignRole(adminId,roleIds);
+        return "common/successPage";
+    }
+
 }
