@@ -2,83 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="417defd1-b2d5-441e-8ad7-23f5b18d4832" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/guigu/config/CustomAccessDeinedHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/guigu/config/MySpringSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/guigu/config/MyUserDetailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/resources/spring/spring-redis.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/webapp/WEB-INF/templates/frame/auth.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/webapp/WEB-INF/templates/frame/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/test/java/com/guigu/PasswordEncoderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-util/target/common-util-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common-util/target/common-util-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/model-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/model-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-api/src/main/java/com/guigu/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-api/src/main/java/com/guigu/service/AdminService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-api/src/main/java/com/guigu/service/PermissionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-api/src/main/java/com/guigu/service/PermissionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-api/target/classes/com/guigu/service/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-api/target/classes/com/guigu/service/AdminService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-api/target/classes/com/guigu/service/PermissionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-api/target/classes/com/guigu/service/PermissionService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-api/target/service-api-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/service-api/target/service-api-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-acl/src/main/java/com/guigu/dao/AdminDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-acl/src/main/java/com/guigu/dao/AdminDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-acl/src/main/java/com/guigu/dao/PermissionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-acl/src/main/java/com/guigu/dao/PermissionDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-acl/src/main/java/com/guigu/service/impl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-acl/src/main/java/com/guigu/service/impl/AdminServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-acl/src/main/java/com/guigu/service/impl/PermissionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-acl/src/main/java/com/guigu/service/impl/PermissionServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-acl/src/main/resources/mapper/AdminDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-acl/src/main/resources/mapper/AdminDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-acl/src/main/resources/mapper/PermissionDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-acl/src/main/resources/mapper/PermissionDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-acl/target/classes/com/guigu/dao/AdminDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-acl/target/classes/com/guigu/dao/AdminDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-acl/target/classes/com/guigu/dao/PermissionDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-acl/target/classes/com/guigu/dao/PermissionDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-acl/target/classes/com/guigu/service/impl/AdminServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-acl/target/classes/com/guigu/service/impl/AdminServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-acl/target/classes/com/guigu/service/impl/PermissionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-acl/target/classes/com/guigu/service/impl/PermissionServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-acl/target/classes/mapper/AdminDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-acl/target/classes/mapper/AdminDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-acl/target/classes/mapper/PermissionDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-acl/target/classes/mapper/PermissionDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-front/src/main/resources/spring/spring-redis.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service-acl/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-acl/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service-acl/target/service-acl-1.0.war" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-acl/target/service-acl-1.0.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-acl/target/service-acl-1.0/WEB-INF/classes/com/guigu/dao/AdminDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-acl/target/service-acl-1.0/WEB-INF/classes/com/guigu/dao/AdminDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-acl/target/service-acl-1.0/WEB-INF/classes/com/guigu/dao/PermissionDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-acl/target/service-acl-1.0/WEB-INF/classes/com/guigu/dao/PermissionDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-acl/target/service-acl-1.0/WEB-INF/classes/com/guigu/service/impl/AdminServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-acl/target/service-acl-1.0/WEB-INF/classes/com/guigu/service/impl/AdminServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-acl/target/service-acl-1.0/WEB-INF/classes/com/guigu/service/impl/PermissionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-acl/target/service-acl-1.0/WEB-INF/classes/com/guigu/service/impl/PermissionServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-acl/target/service-acl-1.0/WEB-INF/classes/mapper/AdminDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-acl/target/service-acl-1.0/WEB-INF/classes/mapper/AdminDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-acl/target/service-acl-1.0/WEB-INF/classes/mapper/PermissionDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-acl/target/service-acl-1.0/WEB-INF/classes/mapper/PermissionDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-acl/target/service-acl-1.0/WEB-INF/lib/common-util-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-acl/target/service-acl-1.0/WEB-INF/lib/common-util-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-acl/target/service-acl-1.0/WEB-INF/lib/model-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-acl/target/service-acl-1.0/WEB-INF/lib/model-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-acl/target/service-acl-1.0/WEB-INF/lib/service-api-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-acl/target/service-acl-1.0/WEB-INF/lib/service-api-1.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service-house/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-house/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service-house/target/service-house-1.0.war" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-house/target/service-house-1.0.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-house/target/service-house-1.0/WEB-INF/lib/common-util-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-house/target/service-house-1.0/WEB-INF/lib/common-util-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-house/target/service-house-1.0/WEB-INF/lib/model-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-house/target/service-house-1.0/WEB-INF/lib/model-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-house/target/service-house-1.0/WEB-INF/lib/service-api-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-house/target/service-house-1.0/WEB-INF/lib/service-api-1.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service-user/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-user/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service-user/target/service-user-1.0.war" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-user/target/service-user-1.0.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-user/target/service-user-1.0/WEB-INF/lib/common-util-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-user/target/service-user-1.0/WEB-INF/lib/common-util-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-user/target/service-user-1.0/WEB-INF/lib/model-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-user/target/service-user-1.0/WEB-INF/lib/model-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-user/target/service-user-1.0/WEB-INF/lib/service-api-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-user/target/service-user-1.0/WEB-INF/lib/service-api-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web-admin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/java/com/guigu/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/guigu/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/java/com/guigu/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/guigu/controller/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/java/com/guigu/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/guigu/controller/RoleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/resources/spring/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/resources/spring/spring-mvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/webapp/WEB-INF/templates/role/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/webapp/WEB-INF/templates/role/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web-admin/target/classes/com/guigu/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/target/classes/com/guigu/controller/AdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web-admin/target/classes/com/guigu/controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/target/classes/com/guigu/controller/IndexController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/web-admin/target/classes/com/guigu/controller/RoleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/target/classes/com/guigu/controller/RoleController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/web-admin/target/classes/spring/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/target/classes/spring/spring-mvc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/web-admin/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web-admin/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/web-admin/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web-admin/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/web-admin/target/web-admin-1.0.war" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/target/web-admin-1.0.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web-admin/target/web-admin-1.0/WEB-INF/classes/com/guigu/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/target/web-admin-1.0/WEB-INF/classes/com/guigu/controller/AdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web-admin/target/web-admin-1.0/WEB-INF/classes/com/guigu/controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/target/web-admin-1.0/WEB-INF/classes/com/guigu/controller/IndexController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web-admin/target/web-admin-1.0/WEB-INF/classes/com/guigu/controller/RoleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/target/web-admin-1.0/WEB-INF/classes/com/guigu/controller/RoleController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/web-admin/target/web-admin-1.0/WEB-INF/classes/spring/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/target/web-admin-1.0/WEB-INF/classes/spring/spring-mvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web-admin/target/web-admin-1.0/WEB-INF/lib/common-util-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/target/web-admin-1.0/WEB-INF/lib/common-util-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web-admin/target/web-admin-1.0/WEB-INF/lib/model-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/target/web-admin-1.0/WEB-INF/lib/model-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web-admin/target/web-admin-1.0/WEB-INF/lib/service-api-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/target/web-admin-1.0/WEB-INF/lib/service-api-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/target/web-admin-1.0/WEB-INF/templates/role/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/target/web-admin-1.0/WEB-INF/templates/role/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/web-admin/target/web-admin-1.0/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/target/web-admin-1.0/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-front/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-front/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-front/src/main/resources/spring/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-front/src/main/resources/spring/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-front/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-front/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/web-front/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-front/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/web-front/target/web-front-1.0.war" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-front/target/web-front-1.0.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web-front/target/web-front-1.0/WEB-INF/lib/common-util-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-front/target/web-front-1.0/WEB-INF/lib/common-util-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web-front/target/web-front-1.0/WEB-INF/lib/model-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-front/target/web-front-1.0/WEB-INF/lib/model-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web-front/target/web-front-1.0/WEB-INF/lib/service-api-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-front/target/web-front-1.0/WEB-INF/lib/service-api-1.0.jar" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -156,7 +100,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/model/src/main/java/com/guigu/helper" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/web-front/src/main/resources/spring" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -164,20 +108,20 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="SQL Dialects" />
+    <property name="settings.editor.selected.configurable" value="spring" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\research\JAVA\javaP\shf-parent\web\web-admin\src\main\webapp\WEB-INF\templates\community" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\research\JAVA\javaP\shf-parent\web\web-front\src\main\resources\spring" />
       <recent name="E:\research\JAVA\javaP\shf-parent\model\src\main\java\com\guigu\helper" />
       <recent name="E:\research\JAVA\javaP\shf-parent\common-util\src\main\java\com\guigu\helper" />
       <recent name="E:\research\JAVA\javaP\shf-parent\service\service-acl\src\main\resources\mapper" />
       <recent name="E:\research\JAVA\javaP\shf-parent\service\service-user\src\main\resources\mapper" />
-      <recent name="E:\research\JAVA\javaP\shf-parent\service\service-user\src\main\resources" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\research\JAVA\javaP\shf-parent\web\web-admin\src\main\webapp\WEB-INF\templates\community" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -462,12 +406,17 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@db353cb5" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@39caec71" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@db353cb5" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@b41ab237" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@39caec71" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@7b20c59a" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@39caec71" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@fe2af107" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
           </expand>
           <select />
@@ -494,6 +443,7 @@
       <workItem from="1663830745354" duration="51218000" />
       <workItem from="1664074455849" duration="28738000" />
       <workItem from="1664262006514" duration="68951000" />
+      <workItem from="1664581386442" duration="4842000" />
     </task>
     <servers />
   </component>

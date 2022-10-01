@@ -4,6 +4,16 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
          id="WebApp_ID" version="3.0">
     <display-name>web</display-name>
+    <!-- spring session共享filter -->
+    <!-- 该过滤器必须是第一个过滤器，所有的请求经过该过滤器后执行后续操作 -->
+    <filter>
+        <filter-name>springSessionRepositoryFilter</filter-name>
+        <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>springSessionRepositoryFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
 <!--    配置解决POSTi请求 请求乱码问题的过滤器-->
     <filter>
         <filter-name>CharacterEncodingFilter</filter-name>

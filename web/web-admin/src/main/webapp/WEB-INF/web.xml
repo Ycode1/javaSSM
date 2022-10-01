@@ -14,7 +14,7 @@
         <filter-name>springSessionRepositoryFilter</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
-<!--    配置解决POSTi请求 请求乱码问题的过滤器-->
+<!--    配置解决POST请求 请求乱码问题的过滤器-->
     <filter>
         <filter-name>CharacterEncodingFilter</filter-name>
         <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>

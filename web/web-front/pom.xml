@@ -11,7 +11,22 @@
 
     <artifactId>web-front</artifactId>
     <packaging>war</packaging>
+    <dependencies>
+        <!--spring-session 同步-->
+        <dependency>
+            <groupId>org.springframework.session</groupId>
+            <artifactId>spring-session-data-redis</artifactId>
+            <!--进行依赖排除，排除aop的jar包的依赖-->
+        <exclusions>
+            <exclusion>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-aop</artifactId>
+            </exclusion>
+        </exclusions>
 
+
+        </dependency>
+    </dependencies>
     <build>
         <plugins>
             <plugin>
